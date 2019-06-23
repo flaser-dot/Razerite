@@ -19,7 +19,7 @@ Initial release.
 
 - Added Nova Launcher from Razer Phone
 - Replaced RazerWalls.apk with inbuilt RazerWallpapers.apk from Razer Phone
-- Added perms to stabalize Razer Apps.
+- Added perms that stabilizes Razer Apps.
 
 # Requirements
 -   [![Magisk](https://img.shields.io/badge/Magisk-18%2B-00B39B.svg)](https://forum.xda-developers.com/apps/magisk/official-magisk-v7-universal-systemless-t3473445)
