@@ -17,9 +17,15 @@ Initial release.
 
 ### V 1.1
 
-- Added Nova Launcher from Razer Phone
-- Replaced RazerWalls.apk with inbuilt RazerWallpapers.apk from Razer Phone
+- Added Nova Launcher from Razer Phone.
+- Replaced RazerWalls.apk with inbuilt RazerWallpapers.apk from Razer Phone.
 - Added perms that stabilizes Razer Apps.
+
+### V 1.2
+
+- Add Razer Cortex, ported from Razer Phone.
+- Add Razer Game Booster, ported from Razer Phone. **(Beta)**
+
 
 # Requirements
 -   [![Magisk](https://img.shields.io/badge/Magisk-18%2B-00B39B.svg)](https://forum.xda-developers.com/apps/magisk/official-magisk-v7-universal-systemless-t3473445)
