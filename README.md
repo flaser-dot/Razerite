@@ -23,8 +23,8 @@ Initial release.
 
 ### V 1.2
 
-- Add Razer Cortex, ported from Razer Phone.
-- Add Razer Game Booster, ported from Razer Phone. **(Beta)**
+- Added Razer Cortex, ported from Razer Phone.
+- Added Razer Game Booster, ported from Razer Phone. **(Beta)**
 
 
 # Requirements
