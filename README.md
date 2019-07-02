@@ -26,6 +26,9 @@ Initial release.
 - Added Razer Cortex, ported from Razer Phone.
 - Added Razer Game Booster, ported from Razer Phone. **(Beta)**
 
+### V 1.3
+
+- Added Option to chose Razer Apps to install independently
 
 # Requirements
 -   [![Magisk](https://img.shields.io/badge/Magisk-18%2B-00B39B.svg)](https://forum.xda-developers.com/apps/magisk/official-magisk-v7-universal-systemless-t3473445)
