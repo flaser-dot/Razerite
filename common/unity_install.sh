@@ -27,28 +27,28 @@ if [ -n "$SAMSUNG" ]; then
   if $VKSEL; then
     ui_print " "
     ui_print "   Ignoring warnings..."
-  else
+else
     ui_print " "
     ui_print "   Exiting..."
     abort
   fi
+
 fi
-
-
 
 ui_print " "
 ui_print " - Boot Animation Option -"
 ui_print " *******************************************"
-ui_print "   Do you want to enable Razer Phone 2 boot animation?"
+ui_print "   Do you want to enable Razerite boot animation?"
 ui_print "   (boot animation may not work for some devices)"
 ui_print "   Vol Up = Yes, Vol Down = No"
 if $VKSEL; then
   ui_print " "
   ui_print "   Enabling boot animation..."
+  mkdir -p "$MAGISK_SIMPLE""$BFOLDER"
+  cp -f "$INSTALLER"/common/options/bootanimation.zip "$MAGISK_SIMPLE""$BFOLDER""$BZIP"
 else
   ui_print " "
   ui_print "   Disabling boot animation..."
-  rm -rf "$TMPDIR/system/media/bootanimation.zip"
 fi
 
 ui_print " "
