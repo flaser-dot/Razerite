@@ -95,12 +95,10 @@ if [ "$API" -ge 27 ]; then
   else
     ui_print " "
     ui_print "  Disabling Nova Launcher..."
-    rm -rf "$TMPDIR"/system/app/RazerWallpapers
     rm -rf "$TMPDIR"/system/app/NovaLauncherOverlay
   fi
 
 else
-    rm -rf "$TMPDIR"/system/app/RazerWallpapers
 
     rm -rf "$TMPDIR"/system/app/NovaLauncherOverlay
     rm -rf "$TMPDIR"/system/priv-app/NovaLauncher
