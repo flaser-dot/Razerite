@@ -75,6 +75,7 @@ ui_print "   Vol Up = Yes, Vol Down = No"
 if $VKSEL; then
   ui_print " "
   ui_print "   Enabling custom media sounds..."
+    rm -rf "$TMPDIR"/system/priv-app/NovaLauncher
   propsoss.prop
 else
   ui_print " "
@@ -86,25 +87,24 @@ fi
 if [ "$API" -ge 27 ]; then
   ui_print " "
   ui_print " *******************************************"
-  ui_print "   Do you want to install Razer Wallpapers and Nova Launcher?"
+  ui_print "   Do you want to install Nova Launcher?"
   ui_print "   Vol Up = Yes, Vol Down = No"
   if $VKSEL; then
     ui_print " "
-    ui_print "   Enabling Razer Wallpapers and Nova Launcher..."
+    ui_print "   Enabling Nova Launcher..."
   else
     ui_print " "
-    ui_print "  Disabling Razer Wallpapers and Nova Launcher..."
+    ui_print "  Disabling Nova Launcher..."
     rm -rf "$TMPDIR"/system/app/RazerWallpapers
     rm -rf "$TMPDIR"/system/app/NovaLauncherOverlay
-    rm -rf "$TMPDIR"/system/priv-app/NovaLauncher
   fi
 
 else
     rm -rf "$TMPDIR"/system/app/RazerWallpapers
+
     rm -rf "$TMPDIR"/system/app/NovaLauncherOverlay
     rm -rf "$TMPDIR"/system/priv-app/NovaLauncher
 fi
-
 
 
 if [ "$API" -ge 27 ]; then
@@ -124,22 +124,29 @@ else
     rm -rf "$TMPDIR"/system/priv-app/RazerCortex
 fi
 
+
+
 if [ "$API" -ge 27 ]; then
   ui_print " "
   ui_print " *******************************************"
-  ui_print "   Do you want to install Razer Game Booster (Beta)?"
+  ui_print "   Do you want to install Razer Wallpapers Stand-Alone App?"
   ui_print "   Vol Up = Yes, Vol Down = No"
   if $VKSEL; then
     ui_print " "
-    ui_print "   Enabling Razer Game Booster..."
+    ui_print "   Enabling RazerWalls..."
   else
     ui_print " "
-    ui_print "  Disabling Razer Game Booster..."
-    rm -rf "$TMPDIR"/system/priv-app/RazerGameBooster
+    ui_print "  Disabling RazerWalls..."
+    rm -rf "$TMPDIR"/system/priv-app/RazerWalls
   fi
 else
-    rm -rf "$TMPDIR"/system/priv-app/RazerGameBooster
+    rm -rf "$TMPDIR"/system/priv-app/RazerWalls
 fi
+
+
+
+
+
 
 ui_print "
 
