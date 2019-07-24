@@ -35,6 +35,11 @@ Initial release.
 - Remove Game Booster unitl it's fixed.
 - Add RazerWalls for users to change wallpapers using stand-alone app.
 
+### V 1.5 
+
+- Fixed Bug where bootanimation installs even if being disabled
+- Fixed Bug where NovaLauncher installs even if being disabled
+- Completely rebase to Oxy-ify
 # Requirements
 -   [![Magisk](https://img.shields.io/badge/Magisk-18%2B-00B39B.svg)](https://forum.xda-developers.com/apps/magisk/official-magisk-v7-universal-systemless-t3473445)
 -   [![Android Lollipop+](https://img.shields.io/badge/Lollipop-5.0+-lightgrey.svg)](https://www.android.com/versions/lollipop-5-0/)
@@ -56,7 +61,7 @@ All the components in this mod are protected under the [GPL-V3 license agreement
 
 # Credits
 - [RKBDI] For helping me with the Razer sources
-- [MarcAnt01] For letting me use his Oxy-fi module
+- [MarcAnt01] For letting me use his Oxy-ify module
 - [Jaymin Suthar] For answering my noob questions
 - [Yash Garg](https://github.com/Yash-Garg/) for helping me setup github
 - [thehappydinoa](https://github.com/thehappydinoa) for initial Unity implementation.

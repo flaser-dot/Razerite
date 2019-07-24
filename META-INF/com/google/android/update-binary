@@ -38,8 +38,13 @@ mount /data 2>/dev/null
 if [ -f /data/adb/magisk/util_functions.sh ]; then
   . /data/adb/magisk/util_functions.sh
   NVBASE=/data/adb
-else
+elif [ -f /data/magisk/util_functions.sh ]; then
   require_new_magisk
+else
+  UF=$TMPDIR/common/unityfiles
+  unzip -oq "$ZIPFILE" 'common/unityfiles/util_functions.sh' -d $TMPDIR >&2
+  [ -f "$UF/util_functions.sh" ] || { ui_print "! Unable to extract zip file !"; exit 1; }
+  . $UF/util_functions.sh
 fi
 
 # Preperation for flashable zips
@@ -65,14 +70,18 @@ unzip -oj "$ZIPFILE" module.prop install.sh uninstall.sh 'common/*' -d $TMPDIR >
 # Load install script
 . $TMPDIR/install.sh
 
-if imageless_magisk; then
-  $BOOTMODE && MODDIRNAME=modules_update || MODDIRNAME=modules
-  MODULEROOT=$NVBASE/$MODDIRNAME
+if $MAGISK; then
+  if imageless_magisk; then
+    $BOOTMODE && MODDIRNAME=modules_update || MODDIRNAME=modules
+    MODULEROOT=$NVBASE/$MODDIRNAME
+  else
+    $BOOTMODE && IMGNAME=magisk_merge.img || IMGNAME=magisk.img
+    IMG=$NVBASE/$IMGNAME
+    request_zip_size_check "$ZIPFILE"
+    mount_magisk_img
+    MODULEROOT=$MOUNTPATH
+  fi
 else
-  $BOOTMODE && IMGNAME=magisk_merge.img || IMGNAME=magisk.img
-  IMG=$NVBASE/$IMGNAME
-  request_zip_size_check "$ZIPFILE"
-  mount_magisk_img
   MODULEROOT=$MOUNTPATH
 fi
 
@@ -81,9 +90,12 @@ MODPATH=$MODULEROOT/$MODID
 
 print_modname
 
+# Anything after this point won't run
+
 ui_print "******************************"
 ui_print "Powered by Magisk (@topjohnwu)"
 ui_print "******************************"
+
 ##########################################################################################
 # Install
 ##########################################################################################
@@ -145,5 +157,6 @@ cd /
 imageless_magisk || unmount_magisk_img
 $BOOTMODE || recovery_cleanup
 rm -rf $TMPDIR $MOUNTPATH
+
 ui_print "- Done"
 exit 0

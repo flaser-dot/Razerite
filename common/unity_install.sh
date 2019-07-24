@@ -1,6 +1,6 @@
 if [ -n "$PIXEL" ]; then
   ui_print " "
-  ui_print "   Razerite doesn't support Google Pixel devices on stock Rom!"
+  ui_print "   Oxy-ify doesn't support Google Pixel devices on stock Rom!"
   ui_print "   DO NOT ATTEMPT TO INSTALL ON STOCK ROM, YOU'LL HAVE A BOOTLOOP"
   ui_print "   If flashed on a Custom Rom you won't have problems"
   ui_print "   *******************************************"
@@ -27,34 +27,34 @@ if [ -n "$SAMSUNG" ]; then
   if $VKSEL; then
     ui_print " "
     ui_print "   Ignoring warnings..."
-else
+  else
     ui_print " "
     ui_print "   Exiting..."
     abort
   fi
-
 fi
+
+
 
 ui_print " "
 ui_print " - Boot Animation Option -"
 ui_print " *******************************************"
-ui_print "   Do you want to enable Razerite boot animation?"
+ui_print "   Do you want to enable Razer boot animation?"
 ui_print "   (boot animation may not work for some devices)"
 ui_print "   Vol Up = Yes, Vol Down = No"
 if $VKSEL; then
   ui_print " "
   ui_print "   Enabling boot animation..."
-  mkdir -p "$MAGISK_SIMPLE""$BFOLDER"
-  cp -f "$INSTALLER"/common/options/bootanimation.zip "$MAGISK_SIMPLE""$BFOLDER""$BZIP"
 else
   ui_print " "
   ui_print "   Disabling boot animation..."
+  rm -rf $TMPDIR/system/media/bootanimation.zip
 fi
 
 ui_print " "
 ui_print " - Font Option -"
 ui_print " *******************************************"
-ui_print "   Do you want to use default fonts in Razer Phone 2?"
+ui_print "   Do you want Razer font?"
 ui_print "   Vol Up = Yes, Vol Down = No"
 if $VKSEL; then
   ui_print " "
@@ -62,29 +62,27 @@ if $VKSEL; then
 else
   ui_print " "
   ui_print "   Disabling font..."
-  rm -rf "$TMPDIR"/system/fonts
+  rm -rf $TMPDIR/system/fonts
 fi
 
 ui_print " "
 ui_print " - Media Option -"
 ui_print " *******************************************"
-ui_print "   Do you want to install Razer custom media sounds?"
-ui_print "   They include ringtones, alarms, notifications,"
-ui_print "   And UI sounds ported from RazerPhone2"
+ui_print "   Do you want Razer custom media sounds?"
+ui_print "   They include ringtones, alarms, notifications"
+ui_print "   and UI sounds"
 ui_print "   Vol Up = Yes, Vol Down = No"
 if $VKSEL; then
   ui_print " "
   ui_print "   Enabling custom media sounds..."
-    rm -rf "$TMPDIR"/system/priv-app/NovaLauncher
-  propsoss.prop
+  prop_process $TMPDIR/common/propsoss.prop
 else
   ui_print " "
   ui_print "   Disabling custom media sounds..."
-  rm -rf "$TMPDIR"/system/media/audio
+  rm -rf $TMPDIR/system/media/audio
 fi
 
-
-if [ "$API" -ge 27 ]; then
+if [ $API -ge 27 ]; then
   ui_print " "
   ui_print " *******************************************"
   ui_print "   Do you want to install Nova Launcher?"
@@ -95,17 +93,15 @@ if [ "$API" -ge 27 ]; then
   else
     ui_print " "
     ui_print "  Disabling Nova Launcher..."
-    rm -rf "$TMPDIR"/system/app/NovaLauncherOverlay
+    rm -rf "$TMPDIR"/system/priv-app/NovaLauncher
   fi
 
 else
-
-    rm -rf "$TMPDIR"/system/app/NovaLauncherOverlay
     rm -rf "$TMPDIR"/system/priv-app/NovaLauncher
 fi
 
 
-if [ "$API" -ge 27 ]; then
+if [ $API -ge 27 ]; then
   ui_print " "
   ui_print " *******************************************"
   ui_print "   Do you want to install Razer Cortex?"
@@ -124,7 +120,7 @@ fi
 
 
 
-if [ "$API" -ge 27 ]; then
+if [ $API -ge 27 ]; then
   ui_print " "
   ui_print " *******************************************"
   ui_print "   Do you want to install Razer Wallpapers Stand-Alone App?"
@@ -199,22 +195,6 @@ ui_print "
 ░░░░██▓▓██
 ░░░██▓▓██
 ░░██▓▓██
-░██▓▓██
-░░██▓▓██
-░░░██▓▓██
-░░░░██▓▓██
-░░░░░██▓▓██
-░░░░██▓▓██
-░░░██▓▓██
-░░██▓▓██
-░██▓▓██
-░░██▓▓██
-░░░██▓▓██
-░░░░██▓▓██
-░░░░░██▓▓██
-░░░░██▓▓██
-░░░██▓▓██
-░░██▓▓██
 ░░██▓▓██
 ░░██▓▓██
 ░░██▓▓██
@@ -237,9 +217,4 @@ ui_print "
             
               By Gamers.
               For Gamers.™
-             
-
-
-
 "
- 
