@@ -40,6 +40,11 @@ Initial release.
 - Fixed Bug where bootanimation installs even if being disabled
 - Fixed Bug where NovaLauncher installs even if being disabled
 - Completely rebase to Oxy-ify temp
+
+### V 1.6
+
+- Changes to work with Android 10.
+
 # Requirements
 -   [![Magisk](https://img.shields.io/badge/Magisk-18%2B-00B39B.svg)](https://forum.xda-developers.com/apps/magisk/official-magisk-v7-universal-systemless-t3473445)
 -   [![Android Lollipop+](https://img.shields.io/badge/Lollipop-5.0+-lightgrey.svg)](https://www.android.com/versions/lollipop-5-0/)
