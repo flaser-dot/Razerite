@@ -58,7 +58,7 @@ All AOSP-based Roms and stock Roms are supported, even MIUI and EMUI.
 - To conigure media sounds just head to settings->sounds.
 
 # Razerite Community
--   [![Telegram Group](https://img.shields.io/badge/Telegram-Group-blue.svg)](https://t.me/Razerite)
+-   [![Telegram Group](https://img.shields.io/badge/Telegram-Group-blue.svg)](https://t.me/RazeriteROGUi)
 
 
 # License agreement
