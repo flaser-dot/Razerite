@@ -45,6 +45,13 @@ Initial release.
 
 - Changes to work with Android 10.
 
+### V 2.0
+- Skip 7 versions
+- Rebase to new template
+- Update Razer Cortex (FPS Meter, 100% Brightness, DND and FPS meter works)
+- Add support for android 10 and better /system, /system/product support
+- PS: Huge thanks to JohnFawkes from FontChanger, Rhyse Simpson from QuickSwitch, and Magisk Devlopment Help community in telegram for helping me get this updated.
+
 # Requirements
 -   [![Magisk](https://img.shields.io/badge/Magisk-18%2B-00B39B.svg)](https://forum.xda-developers.com/apps/magisk/official-magisk-v7-universal-systemless-t3473445)
 -   [![Android Lollipop+](https://img.shields.io/badge/Lollipop-5.0+-lightgrey.svg)](https://www.android.com/versions/lollipop-5-0/)
@@ -54,7 +61,6 @@ All AOSP-based Roms and stock Roms are supported, even MIUI and EMUI.
 
 # Instructions
 - Download and install the module.
-- You can change Razer Wallpapers from Nova Launcher or if you're using third party launcher such as lawnchair, select Wallpapers->NovaLauncher->Razer.
 - To conigure media sounds just head to settings->sounds.
 
 # Razerite Community
@@ -65,12 +71,13 @@ All AOSP-based Roms and stock Roms are supported, even MIUI and EMUI.
 All the components in this mod are protected under the [GPL-V3 license agreement]
 
 # Credits
+
 - [RKBDI] For helping me with the Razer sources
 - [MarcAnt01] For letting me use his Oxy-ify module
 - [Jaymin Suthar] For answering my noob questions
 - [Yash Garg](https://github.com/Yash-Garg/) for helping me setup github
 - [thehappydinoa](https://github.com/thehappydinoa) for initial Unity implementation.
 - [JohnFawkes](https://github.com/JohnFawkes) for helping me to solve bugs.
-- [Zackptg5](https://github.com/Zackptg5) for Unity template.
+- [Zackptg5](https://github.com/Zackptg5) for His new MMT template: (https://github.com/Zackptg5/MMT-Extended).
 - [topjohnwu](https://github.com/topjohnwu) for Magisk.
-- Razerite for making their work OpenSause ;)
+- Razer for making their work OpenSause ;)
