@@ -6,9 +6,7 @@ Razerite is a fantastic Magisk Module that gives your device a Razer Touch by ad
 - Razer Phone 2 media sounds;
 - Razer Phone 2 Wallpapers;
 - Razer Phone 2 Apps (In devlopment)
-- More features to come.
-
-This module uses **Unity** template with volume keys addon. That means that you can choose to install just what you prefer during the installation process.
+- More features to come. 
 
 # Changelog
 
@@ -48,7 +46,7 @@ Initial release.
 ### V 2.0
 - Skip 7 versions
 - Rebase to new template
-- Update Razer Cortex (FPS Meter, 100% Brightness, DND and FPS meter works)
+- Update Razer Cortex (FPS Meter, 100% Brightness, and DND works)
 - Add support for android 10 and better /system, /system/product support
 - PS: Huge thanks to JohnFawkes from FontChanger, Rhyse Simpson from QuickSwitch, and Magisk Devlopment Help community in telegram for helping me get this updated.
 
