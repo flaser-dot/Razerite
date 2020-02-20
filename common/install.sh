@@ -117,6 +117,7 @@ else
   ui_print "Skipping Bootanimation..."
   rm -rf $MODPATH/Bootanimation/bootanimation.zip
 fi
+ui_print ""
 
 #Razer Media Sound Installation:
 
