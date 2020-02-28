@@ -106,17 +106,23 @@ ui_print "**********************************"
 if $VKSEL; then
   ui_print ""
   ui_print "Installing Razer Bootanimation..."
-  if [ -f /system/media/bootanimation*.zip ]; then
-    mkdir -p $MODPATH/system/media
-    mv $MODPATH/Bootanimation/bootanimation.zip $MODPATH/system/media
-  elif [ -f /system/product/media/bootanimation*.zip ]; then
-    mkdir -p $MODPATH/system/product/media
-    mv $MODPATH/Bootanimation/bootanimation.zip $MODPATH/system/product/media
+for i in /system/media/*bootanimation*; do
+    cp_ch $MODPATH/Bootanimation/bootanimation.zip $MODPATH/$i
+  if [ -f /system/media/bootanimation-dark.zip ]; then
+    cp_ch $MODPATH/Bootanimation/bootanimation.zip $MODPATH /system/media/bootanimation-dark.zip
   fi
-else
-  ui_print "Skipping Bootanimation..."
-  rm -rf $MODPATH/Bootanimation/bootanimation.zip
+done
+
+  for d in /system/product/media/*bootanimation*; do
+    cp_ch $MODPATH/Bootanimation/bootanimation.zip $MODPATH/$d
+    if [ -f /system/product/media/bootanimation-dark.zip ]; then
+      cp_ch $MODPATH/Bootanimation/bootanimation.zip $MODPATH /system/product/media/bootanimation-dark.zip
+    fi
+  done
+else rm -r $MODPATH/Bootanimation/bootanimation.zip
+
 fi
+
 ui_print ""
 
 #Razer Media Sound Installation:
