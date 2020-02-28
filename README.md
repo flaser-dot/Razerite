@@ -50,6 +50,9 @@ Initial release.
 - Add support for android 10 and better /system, /system/product support
 - PS: Huge thanks to JohnFawkes from FontChanger, Rhyse Simpson from QuickSwitch, and Magisk Devlopment Help community in telegram for helping me get this updated.
 
+### V 2.1
+- Fix Bootanimation not working for some devics.
+
 # Requirements
 -   [![Magisk](https://img.shields.io/badge/Magisk-18%2B-00B39B.svg)](https://forum.xda-developers.com/apps/magisk/official-magisk-v7-universal-systemless-t3473445)
 -   [![Android Lollipop+](https://img.shields.io/badge/Lollipop-5.0+-lightgrey.svg)](https://www.android.com/versions/lollipop-5-0/)
