@@ -109,6 +109,7 @@ if $VKSEL; then
   ui_print ""
   ui_print "Downloading Razer Bootanimation...This will take a while..."
   curl -L -o $MODPATH/Bootanimation/bootanimation.zip https://github.com/LordVicky/Razerite_Files/raw/master/bootanimation.zip
+  ui_print ""
   ui_print "Downloading complete. Commencing Installation..."
   
 #Andoird 10 Multiple bootanimation support script:
@@ -125,6 +126,8 @@ done
       cp_ch $MODPATH/Bootanimation/bootanimation.zip $MODPATH /system/product/media/bootanimation-dark.zip
     fi
   done
+  ui_print ""
+  ui_print "Bootanimation Installation complete"
 else rm -r $MODPATH/Bootanimation/bootanimation.zip
 
 fi

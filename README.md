@@ -59,6 +59,9 @@ Initial release.
 ### V 2.1
 - Fix Bootanimation not working for some devics.
 
+### V 2.2
+- Make module lighter by making bootanimation downloadable!
+
 # Requirements
 -   [![Magisk](https://img.shields.io/badge/Magisk-18%2B-00B39B.svg)](https://forum.xda-developers.com/apps/magisk/official-magisk-v7-universal-systemless-t3473445)
 
