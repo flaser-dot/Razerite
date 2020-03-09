@@ -104,7 +104,6 @@ ui_print "*   Install Razer Bootanimation? *"
 ui_print "*                                *"
 ui_print "*   VolUp = Yes, VolDown = No.   *"
 ui_print "**********************************"
-
 if $VKSEL; then
   ui_print ""
   ui_print "Downloading Razer Bootanimation...This will take a while..."
@@ -132,8 +131,6 @@ else rm -r $MODPATH/Bootanimation/bootanimation.zip
 
 fi
 
-ui_print ""
-
 #Razer Media Sound Installation:
 
 ui_print "********************************************"
@@ -154,7 +151,6 @@ else
   ui_print "Skipping UI Sounds and Ringtones..."
   rm -rf $MODPATH/Media/audio
 fi
-
 
 
 

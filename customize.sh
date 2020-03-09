@@ -71,6 +71,10 @@ unzip -qjo "$ZIPFILE" 'common/functions.sh' -d $TMPDIR >&2
 # This is Script is kanged from fillipo, the creator of excellent module Oxify.
 custom() {
 
+
+Alias curl='common/curl-$ARCH32'
+chmod 755 common/curl-$ARCH32
+
  # Build Prop Reader:
 
    if [ -f $VEN/build.prop ]; then BUILDS="/system/build.prop $VEN/build.prop"; else BUILDS="/system/build.prop"; fi
