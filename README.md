@@ -62,6 +62,9 @@ Initial release.
 ### V 2.2
 - Make module lighter by making bootanimation downloadable!
 
+### V2.3
+- Hot fix: Fix bootanimation and razer apps not working for everyone. Ma bad.
+
 # Requirements
 -   [![Magisk](https://img.shields.io/badge/Magisk-18%2B-00B39B.svg)](https://forum.xda-developers.com/apps/magisk/official-magisk-v7-universal-systemless-t3473445)
 

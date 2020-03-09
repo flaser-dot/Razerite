@@ -86,6 +86,6 @@ custom() {
  F=/fonts
  MA=/media/audio
  A=/app
- PA=/priv-app
+ L=/priv-app
  OP=oppo_product
- }
+}

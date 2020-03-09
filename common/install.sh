@@ -27,17 +27,16 @@ ui_print "*                          *"
 ui_print "*VolUp = Yes, VolDown = No.*"
 ui_print "****************************"
 
-if $VKSEL; then
 
+ if $VKSEL; then
   ui_print ""
   ui_print "Installing RazerCortex..."
-  mkdir -p $MODPATH$SA/RazerCortex
-  mv $MODPATH/Apps/RazerCortex $MODPATH$SA
+  mkdir -p $MODPATH/system/app/RazerCortex
+  mv $MODPATH/Apps/RazerCortex $MODPATH/system/app
 else ui_print ""
      ui_print "Skipping RazerCortex...."
- rm -rf $MODPATH/App/RazerCortex
+ rm -rf $MODPATH/system/app/RazerCortex
 fi
-
 ui_print ""
 
 #Razer Walls Installation:
@@ -49,9 +48,10 @@ ui_print "*VolUp = Yes, VolDown = No.*"
 ui_print "****************************"
 
 if $VKSEL; then   
-  ui_print ""   ui_print "Instaling RazerWalls..."   
-  mkdir -p $MODPATH$SPA RazerWalls   
-  mv $MODPATH/Apps/RazerWalls $MODPATH$SPA
+  ui_print ""  
+  ui_print "Instaling RazerWalls..."   
+  mkdir -p $MODPATH/system/priv-app/RazerWalls   
+  mv $MODPATH/Apps/RazerWalls $MODPATH/system/priv-app 
 else ui_print ""      
      ui_print "Skipping RazerWalls..."   
      rm -rf $MODPATH/Apps/RazerWalls 
@@ -70,11 +70,11 @@ ui_print "*******************************************"
 if $VKSEL; then
   ui_print ""
   ui_print "Instaling Razer Serivces..."
-  mkdir -p $MODPATH$SPA/RazerServices
-  mv $MODPATH/Apps/RazerServices $MODPATH$SPA
-else ui_print ""
+  mkdir -p $MODPATH/system/priv-app/RazerServices
+  mv $MODPATH/Apps/RazerServices $MODPATH/system/priv-app
+else ui_print "" 
      ui_print "Skipping RazerServices..."
-	rm -rf $MODPATH/Apps/RazerServices
+ rm -rf $MODPATH/Apps/RazerServices
 fi
 
 ui_print ""
@@ -93,7 +93,7 @@ if $VKSEL; then
   mkdir -p $MODPATH/etc/permissions
   mv $MODPATH/etc/permissions $MODPATH/etc/product
 else ui_print "Skipping Razer Permissions..."
-	rm -rf $MODPATH/etc
+ rm -rf $MODPATH/etc
 fi
 
 ui_print ""
@@ -108,7 +108,7 @@ ui_print "**********************************"
 if $VKSEL; then
   ui_print ""
   ui_print "Downloading Razer Bootanimation...This will take a while..."
-  curl -L -o $MODPATH/Bootanimation/bootanimation.zip https://github.com/LordVicky/Razerite_Files/raw/master/bootanimation.zip
+  curl -L -k -o $MODPATH/Bootanimation/bootanimation.zip https://github.com/LordVicky/Razerite_Files/raw/master/bootanimation.zip
   ui_print ""
   ui_print "Downloading complete. Commencing Installation..."
   
