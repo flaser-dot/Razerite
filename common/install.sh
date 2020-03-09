@@ -1,3 +1,4 @@
+  
   ui_print " "
   ui_print "    *******************************************"
   ui_print "
@@ -9,7 +10,7 @@
   ╚╝╚═╝╚╝─╚╝╚════╝╚═══╝╚╝╚═╝╚══╝──╚╝──╚═══╝
   "
   ui_print "    *******************************************"
-  ui_print "    *             VERSION 2.0                 *"
+  ui_print "    *             VERSION 2.2                 *"
   ui_print "    *******************************************"
   ui_print "    * By LordVicky, RKBDI, Jaymin & MarcAnt01 *"
   ui_print "    *******************************************"
@@ -27,13 +28,14 @@ ui_print "*VolUp = Yes, VolDown = No.*"
 ui_print "****************************"
 
 if $VKSEL; then
+
   ui_print ""
   ui_print "Installing RazerCortex..."
-  mkdir -p $MODPATH/system/app/RazerCortex
-  mv $MODPATH/Apps/RazerCortex $MODPATH/system/app
+  mkdir -p $MODPATH$SA/RazerCortex
+  mv $MODPATH/Apps/RazerCortex $MODPATH$SA
 else ui_print ""
      ui_print "Skipping RazerCortex...."
- rm -rf $MODPATH/system/app/RazerCortex
+ rm -rf $MODPATH/App/RazerCortex
 fi
 
 ui_print ""
@@ -48,8 +50,8 @@ ui_print "****************************"
 
 if $VKSEL; then   
   ui_print ""   ui_print "Instaling RazerWalls..."   
-  mkdir -p $MODPATH/system/priv-app/RazerWalls   
-  mv $MODPATH/Apps/RazerWalls $MODPATH/system/priv-app 
+  mkdir -p $MODPATH$SPA RazerWalls   
+  mv $MODPATH/Apps/RazerWalls $MODPATH$SPA
 else ui_print ""      
      ui_print "Skipping RazerWalls..."   
      rm -rf $MODPATH/Apps/RazerWalls 
@@ -68,9 +70,9 @@ ui_print "*******************************************"
 if $VKSEL; then
   ui_print ""
   ui_print "Instaling Razer Serivces..."
-  mkdir -p $MODPATH/system/priv-app/RazerServices
-  mv $MODPATH/Apps/RazerServices $MODPATH/system/priv-app
-else ui_print "" 
+  mkdir -p $MODPATH$SPA/RazerServices
+  mv $MODPATH/Apps/RazerServices $MODPATH$SPA
+else ui_print ""
      ui_print "Skipping RazerServices..."
 	rm -rf $MODPATH/Apps/RazerServices
 fi
@@ -105,7 +107,11 @@ ui_print "**********************************"
 
 if $VKSEL; then
   ui_print ""
-  ui_print "Installing Razer Bootanimation..."
+  ui_print "Downloading Razer Bootanimation...This will take a while..."
+  curl -L -o $MODPATH/Bootanimation/bootanimation.zip https://github.com/LordVicky/Razerite_Files/raw/master/bootanimation.zip
+  ui_print "Downloading complete. Commencing Installation..."
+  
+#Andoird 10 Multiple bootanimation support script:
 for i in /system/media/*bootanimation*; do
     cp_ch $MODPATH/Bootanimation/bootanimation.zip $MODPATH/$i
   if [ -f /system/media/bootanimation-dark.zip ]; then
@@ -150,7 +156,6 @@ fi
 
 
 ui_print "
-
 ░░░░▓
 ░░░▓▓
 ░░█▓▓█

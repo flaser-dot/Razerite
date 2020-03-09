@@ -66,3 +66,26 @@ set_permissions() {
 SKIPUNZIP=1
 unzip -qjo "$ZIPFILE" 'common/functions.sh' -d $TMPDIR >&2
 . $TMPDIR/functions.sh
+
+# Custom Variables for Install AND Uninstall - Keep everything within this function - runs before uninstall/install
+# This is Script is kanged from fillipo, the creator of excellent module Oxify.
+custom() {
+
+ # Build Prop Reader:
+
+   if [ -f $VEN/build.prop ]; then BUILDS="/system/build.prop $VEN/build.prop"; else BUILDS="/system/build.prop"; fi
+  PIXEL=$(grep -E "ro.product.manufacturer=Google|ro.product.vendor.brand=Google" "$BUILDS")
+  SAMSUNG=$(grep -E "ro.product.manufacturer=Samsung|ro.product-vendor.brand=Samsung" "$BUILDS")
+  OPPO=$(grep -E "ro.product.manufacturer=OPPO|ro.product.brand=OPPO" "$BUILDS")
+
+# Easy directory vars:
+
+ S=/system
+ SP=/system/product
+ P=/product
+ F=/fonts
+ MA=/media/audio
+ A=/app
+ PA=/priv-app
+ OP=oppo_product
+ }
