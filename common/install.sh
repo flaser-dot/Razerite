@@ -1,7 +1,7 @@
   
-  ui_print " "
-  ui_print "    *******************************************"
-  ui_print "
+ui_print " "
+ui_print "    *******************************************"
+ui_print "
   ╔═══╗╔═══╗╔════╗╔═══╗╔═══╗╔══╗╔════╗╔═══╗
   ║╔═╗║║╔═╗║╚══╗═║║╔══╝║╔═╗║╚╣─╝║╔╗╔╗║║╔══╝
   ║╚═╝║║║─║║──╔╝╔╝║╚══╗║╚═╝║─║║─╚╝║║╚╝║╚══╗
@@ -9,15 +9,15 @@
   ║║║╚╗║╔═╗║╔╝═╚═╗║╚══╗║║║╚╗╔╣─╗──║║──║╚══╗
   ╚╝╚═╝╚╝─╚╝╚════╝╚═══╝╚╝╚═╝╚══╝──╚╝──╚═══╝
   "
-  ui_print "    *******************************************"
-  ui_print "    *             VERSION 2.2                 *"
-  ui_print "    *******************************************"
-  ui_print "    * By LordVicky, RKBDI, Jaymin & MarcAnt01 *"
-  ui_print "    *******************************************"
-  ui_print " "
-  ui_print " "
-  ui_print "|S|t|a|r|t|i|n|g| |I|n|s|t|a|l|l|a|t|i|o|n|"
-  ui_print ""
+ui_print "    *******************************************"
+ui_print "    *             VERSION 2.2                 *"
+ui_print "    *******************************************"
+ui_print "    * By LordVicky, RKBDI, Jaymin & MarcAnt01 *"
+ui_print "    *******************************************"
+ui_print " "
+ui_print " "
+ui_print "|S|t|a|r|t|i|n|g| |I|n|s|t|a|l|l|a|t|i|o|n|"
+ui_print ""
 
 #RazerCortex Installation:
 
@@ -27,15 +27,15 @@ ui_print "*                          *"
 ui_print "*VolUp = Yes, VolDown = No.*"
 ui_print "****************************"
 
-
- if $VKSEL; then
+if $VKSEL; then
   ui_print ""
   ui_print "Installing RazerCortex..."
   mkdir -p $MODPATH/system/app/RazerCortex
   mv $MODPATH/Apps/RazerCortex $MODPATH/system/app
-else ui_print ""
-     ui_print "Skipping RazerCortex...."
- rm -rf $MODPATH/system/app/RazerCortex
+else 
+  ui_print ""
+  ui_print "Skipping RazerCortex...."
+  rm -rf $MODPATH/system/app/RazerCortex
 fi
 ui_print ""
 
@@ -52,9 +52,10 @@ if $VKSEL; then
   ui_print "Instaling RazerWalls..."   
   mkdir -p $MODPATH/system/priv-app/RazerWalls   
   mv $MODPATH/Apps/RazerWalls $MODPATH/system/priv-app 
-else ui_print ""      
-     ui_print "Skipping RazerWalls..."   
-     rm -rf $MODPATH/Apps/RazerWalls 
+else 
+  ui_print ""      
+  ui_print "Skipping RazerWalls..."   
+  rm -rf $MODPATH/Apps/RazerWalls 
 fi
 
 ui_print ""
@@ -72,9 +73,10 @@ if $VKSEL; then
   ui_print "Instaling Razer Serivces..."
   mkdir -p $MODPATH/system/priv-app/RazerServices
   mv $MODPATH/Apps/RazerServices $MODPATH/system/priv-app
-else ui_print "" 
-     ui_print "Skipping RazerServices..."
- rm -rf $MODPATH/Apps/RazerServices
+else 
+  ui_print "" 
+  ui_print "Skipping RazerServices..."
+  rm -rf $MODPATH/Apps/RazerServices
 fi
 
 ui_print ""
@@ -92,8 +94,9 @@ if $VKSEL; then
   ui_print "Installing Razer Permissions..."
   mkdir -p $MODPATH/etc/permissions
   mv $MODPATH/etc/permissions $MODPATH/etc/product
-else ui_print "Skipping Razer Permissions..."
- rm -rf $MODPATH/etc
+else 
+  ui_print "Skipping Razer Permissions..."
+  rm -rf $MODPATH/etc
 fi
 
 ui_print ""
@@ -107,6 +110,7 @@ ui_print "**********************************"
 if $VKSEL; then
   ui_print ""
   ui_print "Downloading Razer Bootanimation...This will take a while..."
+  mkdir -p $MODPATH/Bootanimation
   curl -L -k -o $MODPATH/Bootanimation/bootanimation.zip https://github.com/LordVicky/Razerite_Files/raw/master/bootanimation.zip
   ui_print ""
   ui_print "Downloading complete. Commencing Installation..."

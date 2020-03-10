@@ -72,8 +72,8 @@ unzip -qjo "$ZIPFILE" 'common/functions.sh' -d $TMPDIR >&2
 custom() {
 
 
-Alias curl='common/curl-$ARCH32'
-chmod 755 common/curl-$ARCH32
+alias curl='$MODPATH/common/curl/curl-$ARCH32'
+chmod 755 $MODPATH/common/curl/curl-$ARCH32
 
  # Build Prop Reader:
 
