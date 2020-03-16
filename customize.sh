@@ -14,7 +14,7 @@
 #MINAPI=
 #MAXAPI=
 #DYNLIB=true
-#DEBUG=true
+DEBUG=true
 
 ##########################################################################################
 # Replace list
@@ -81,8 +81,9 @@ chmod 755 $MODPATH/common/curl/curl-$ARCH32
   PIXEL=$(grep -E "ro.product.manufacturer=Google|ro.product.vendor.brand=Google" "$BUILDS")
   SAMSUNG=$(grep -E "ro.product.manufacturer=Samsung|ro.product-vendor.brand=Samsung" "$BUILDS")
   OPPO=$(grep -E "ro.product.manufacturer=OPPO|ro.product.brand=OPPO" "$BUILDS")
+  SONY=$(grep -E "ro.product.vendor.manufacturer=Sony|ro.product.vendor.brand=Sony" "$BUILDS")
 
-# Easy directory vars:
+# Easy directory values:
 
  S=/system
  SP=/system/product
@@ -92,4 +93,5 @@ chmod 755 $MODPATH/common/curl/curl-$ARCH32
  A=/app
  L=/priv-app
  OP=oppo_product
+ NY=oem
 }

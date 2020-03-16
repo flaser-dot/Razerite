@@ -68,6 +68,8 @@ Initial release.
 ### V2.4
 - Fix bootanimation again, sorry for the down time.
 
+### V2.5
+- Add support for Sony devices
 # Requirements
 -   [![Magisk](https://img.shields.io/badge/Magisk-18%2B-00B39B.svg)](https://forum.xda-developers.com/apps/magisk/official-magisk-v7-universal-systemless-t3473445)
 
