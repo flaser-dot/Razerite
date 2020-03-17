@@ -6,7 +6,7 @@ Razerite is a fantastic Magisk Module that gives your device a Razer Touch by ad
 - Razer Phone 2 media sounds;
 - Razer Phone 2 Wallpapers;
 - Razer Phone 2 Apps (In devlopment)
-- More features to come. 
+- More features yet to come. 
 
 # Razerite Community
 -   [![Telegram Group](https://img.shields.io/badge/Telegram-Group-blue.svg)](https://t.me/RazeriteROGUi)
@@ -16,50 +16,50 @@ Razerite is a fantastic Magisk Module that gives your device a Razer Touch by ad
 
 # Changelog
 
-### V 1.0
+### V1.0
 Initial release.
 
-### V 1.1
+### V1.1
 
 - Added Nova Launcher from Razer Phone.
 - Replaced RazerWalls.apk with inbuilt RazerWallpapers.apk from Razer Phone.
 - Added perms that stabilizes Razer Apps.
 
-### V 1.2
+### V1.2
 
 - Added Razer Cortex, ported from Razer Phone.
 - Added Razer Game Booster, ported from Razer Phone. **(Beta)**
 
-### V 1.3
+### V1.3
 
 - Added Option to chose Razer Apps to install independently
 
-### V 1.4
+### V1.4
 
 - Remove Game Booster unitl it's fixed.
 - Add RazerWalls for users to change wallpapers using stand-alone app.
 
-### V 1.5 
+### V1.5 
 
 - Fixed Bug where bootanimation installs even if being disabled
 - Fixed Bug where NovaLauncher installs even if being disabled
 - Completely rebase to Oxy-ify temp
 
-### V 1.6
+### V1.6
 
 - Changes to work with Android 10.
 
-### V 2.0
+### V2.0
 - Skip 7 versions
 - Rebase to new template
 - Update Razer Cortex (FPS Meter, 100% Brightness, and DND works)
 - Add support for android 10 and better /system, /system/product support
 - PS: Huge thanks to JohnFawkes from FontChanger, Rhyse Simpson from QuickSwitch, and Magisk Devlopment Help community in telegram for helping me get this updated.
 
-### V 2.1
+### V2.1
 - Fix Bootanimation not working for some devics.
 
-### V 2.2
+### V2.2
 - Make module lighter by making bootanimation downloadable!
 
 ### V2.3
