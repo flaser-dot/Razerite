@@ -16,38 +16,26 @@ Razerite is a fantastic Magisk Module that gives your device a Razer Touch by ad
 
 # Changelog
 
-### V 1.0
-Initial release.
+### V 2.6
+- Reverse changelog patern
+- Add Razer Live Wallpaper thanks to Venkatesh (https://t.me/ModuleMagicGroup)
+- Note: You can apply the live wall from Wallapers->Live Wallpapers.
+- Donnors of the month: TJ #TF60872 (https://t.me/ChillsAndFrills)
 
-### V 1.1
+### V2.5
+- Add support for Sony devices
 
-- Added Nova Launcher from Razer Phone.
-- Replaced RazerWalls.apk with inbuilt RazerWallpapers.apk from Razer Phone.
-- Added perms that stabilizes Razer Apps.
+### V 2.4
+- Fix bootanimation again, sorry for the down time.
 
-### V 1.2
+### V 2.3
+- Hot fix: Fix bootanimation and razer apps not working for everyone. Ma bad.
 
-- Added Razer Cortex, ported from Razer Phone.
-- Added Razer Game Booster, ported from Razer Phone. **(Beta)**
+### V 2.2
+- Make module lighter by making bootanimation downloadable!
 
-### V 1.3
-
-- Added Option to chose Razer Apps to install independently
-
-### V 1.4
-
-- Remove Game Booster unitl it's fixed.
-- Add RazerWalls for users to change wallpapers using stand-alone app.
-
-### V 1.5 
-
-- Fixed Bug where bootanimation installs even if being disabled
-- Fixed Bug where NovaLauncher installs even if being disabled
-- Completely rebase to Oxy-ify temp
-
-### V 1.6
-
-- Changes to work with Android 10.
+### V 2.1
+- Fix Bootanimation not working for some devics.
 
 ### V 2.0
 - Skip 7 versions
@@ -56,20 +44,39 @@ Initial release.
 - Add support for android 10 and better /system, /system/product support
 - PS: Huge thanks to JohnFawkes from FontChanger, Rhyse Simpson from QuickSwitch, and Magisk Devlopment Help community in telegram for helping me get this updated.
 
-### V 2.1
-- Fix Bootanimation not working for some devics.
+### V 1.6
 
-### V 2.2
-- Make module lighter by making bootanimation downloadable!
+- Changes to work with Android 10.
 
-### V2.3
-- Hot fix: Fix bootanimation and razer apps not working for everyone. Ma bad.
+### V 1.5 
 
-### V2.4
-- Fix bootanimation again, sorry for the down time.
+- Fixed Bug where bootanimation installs even if being disabled
+- Fixed Bug where NovaLauncher installs even if being disabled
+- Completely rebase to Oxy-ify temp
 
-### V2.5
-- Add support for Sony devices
+### V 1.4
+
+- Remove Game Booster unitl it's fixed.
+- Add RazerWalls for users to change wallpapers using stand-alone app.
+
+### V 1.3
+
+- Added Option to chose Razer Apps to install independently
+
+### V 1.2
+
+- Added Razer Cortex, ported from Razer Phone.
+- Added Razer Game Booster, ported from Razer Phone. **(Beta)**
+
+### V 1.1
+
+- Added Nova Launcher from Razer Phone.
+- Replaced RazerWalls.apk with inbuilt RazerWallpapers.apk from Razer Phone.
+- Added perms that stabilizes Razer Apps.
+
+### V 1.0
+Initial release.
+
 # Requirements
 -   [![Magisk](https://img.shields.io/badge/Magisk-18%2B-00B39B.svg)](https://forum.xda-developers.com/apps/magisk/official-magisk-v7-universal-systemless-t3473445)
 

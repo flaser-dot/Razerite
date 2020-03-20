@@ -10,7 +10,7 @@ ui_print "
   ╚╝╚═╝╚╝─╚╝╚════╝╚═══╝╚╝╚═╝╚══╝──╚╝──╚═══╝
   "
 ui_print "    *******************************************"
-ui_print "    *             VERSION 2.5                *"
+ui_print "    *             VERSION 2.6                *"
 ui_print "    *******************************************"
 ui_print "    * By LordVicky, RKBDI, Jaymin & MarcAnt01 *"
 ui_print "    *******************************************"
@@ -42,23 +42,27 @@ ui_print ""
 #Razer Walls Installation:
 
 ui_print "****************************"
-ui_print "*   Install Razer Walls?   *"
-ui_print "*                          *"
+ui_print "*   Install Razer Walls    *"
+ui_print "*    and Live Wallpaper?   *"
 ui_print "*VolUp = Yes, VolDown = No.*"
 ui_print "****************************"
 
 if $VKSEL; then   
   ui_print ""  
   ui_print "Instaling RazerWalls..."   
-  mkdir -p $MODPATH/system/priv-app/RazerWalls   
-  mv $MODPATH/Apps/RazerWalls $MODPATH/system/priv-app 
+  mkdir -p $MODPATH/system/priv-app/RazerWalls
+  mkdir -p $MODPATH/system/priv-app/RazerLiveWall  
+  mv $MODPATH/Apps/RazerWalls $MODPATH/system/priv-app
+  mv $MODPATH/Apps/RazerLiveWall $MODPATH/system/priv-app
 else 
   ui_print ""      
-  ui_print "Skipping RazerWalls..."   
+  ui_print "Skipping RazerWalls and Live Wallpaper..."   
   rm -rf $MODPATH/Apps/RazerWalls 
+  rm -rf $MODPATH/Apps/RazerLiveWall
+
 fi
 
-ui_print ""
+ui_print "Note: You can find the live wall in Wallpaper<LiveWallpapers<"
 
 #Razer Services Installation:
 
@@ -141,7 +145,7 @@ if [ -d /oem/media ]; then
       is_mounted " /oem/media" || mount /oem/media
       is_mounted_rw " /oem/media" || mount_rw /oem/media
       mv /oem/media/bootanimation.zip /oem/media/bootanimation/bootanimation.zip
-      cp_ch $MODPATH/Bootanimation/bootanimation.zip /oem/media
+      cp_ch $MODPATH/Bootanimation/bootanimation.zip $MODPATH/oem/media
 fi
 
 #Andoird 10 Multiple bootanimation support script:
