@@ -16,7 +16,6 @@ Razerite is a fantastic Magisk Module that gives your device a Razer Touch by ad
 
 # Changelog
 
-<<<<<<< HEAD
 ### V 2.6
 - Reverse changelog patern
 - Add Razer Live Wallpaper thanks to Venkatesh (https://t.me/ModuleMagicGroup)
@@ -25,32 +24,18 @@ Razerite is a fantastic Magisk Module that gives your device a Razer Touch by ad
 
 ### V2.5
 - Add support for Sony devices
-=======
-### V1.0
-Initial release.
-
-### V1.1
->>>>>>> df76b557de7ae7b238ed7bfe8ca40a1f559610ce
 
 ### V 2.4
 - Fix bootanimation again, sorry for the down time.
 
-<<<<<<< HEAD
 ### V 2.3
 - Hot fix: Fix bootanimation and razer apps not working for everyone. Ma bad.
-=======
-### V1.2
->>>>>>> df76b557de7ae7b238ed7bfe8ca40a1f559610ce
 
 ### V 2.2
 - Make module lighter by making bootanimation downloadable!
 
-<<<<<<< HEAD
 ### V 2.1
 - Fix Bootanimation not working for some devics.
-=======
-### V1.3
->>>>>>> df76b557de7ae7b238ed7bfe8ca40a1f559610ce
 
 ### V 2.0
 - Skip 7 versions
@@ -59,49 +44,26 @@ Initial release.
 - Add support for android 10 and better /system, /system/product support
 - PS: Huge thanks to JohnFawkes from FontChanger, Rhyse Simpson from QuickSwitch, and Magisk Devlopment Help community in telegram for helping me get this updated.
 
-<<<<<<< HEAD
 ### V 1.6
-=======
-### V1.4
->>>>>>> df76b557de7ae7b238ed7bfe8ca40a1f559610ce
 
 - Changes to work with Android 10.
 
-### V1.5 
+### V 1.5 
 
 - Fixed Bug where bootanimation installs even if being disabled
 - Fixed Bug where NovaLauncher installs even if being disabled
 - Completely rebase to Oxy-ify temp
 
-<<<<<<< HEAD
 ### V 1.4
-=======
-### V1.6
->>>>>>> df76b557de7ae7b238ed7bfe8ca40a1f559610ce
 
 - Remove Game Booster unitl it's fixed.
 - Add RazerWalls for users to change wallpapers using stand-alone app.
 
-<<<<<<< HEAD
 ### V 1.3
 
 - Added Option to chose Razer Apps to install independently
 
 ### V 1.2
-=======
-### V2.0
-- Skip 7 versions
-- Rebase to new template
-- Update Razer Cortex (FPS Meter, 100% Brightness, and DND works)
-- Add support for android 10 and better /system, /system/product support
-- PS: Huge thanks to JohnFawkes from FontChanger, Rhyse Simpson from QuickSwitch, and Magisk Devlopment Help community in telegram for helping me get this updated.
-
-### V2.1
-- Fix Bootanimation not working for some devics.
-
-### V2.2
-- Make module lighter by making bootanimation downloadable!
->>>>>>> df76b557de7ae7b238ed7bfe8ca40a1f559610ce
 
 - Added Razer Cortex, ported from Razer Phone.
 - Added Razer Game Booster, ported from Razer Phone. **(Beta)**
